@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<button id="load-Data">load-Data</button>
+	<button id="display-Data">display-Data</button>
+
+
+	<div id="container"></div>
+	<script id="user-template" type="text/x-handlebars-template">
+		<img src="{{url}}" alt="">
+		<p>{{firstName}} {{lastName}} {{city}} {{state}} </p>
+	</script>
+
+	<script id="users-template" type="text/x-handlebars-template">
+		{{#each users}}
+		<ul>
+			<li>{{this}}</li>
+		</ul>
+		{{/each}}
+	</script>
+
+	<script id="qoutes-template" type="text/x-handlebars-template">
+		{{#each kanye}}
+			<p> {{this}} </p>
+		{{/each}}
+	</script>
+
+	<script id="pokemon-template" type="text/x-handlebars-template">
+		<img src={{pokemonPicture}}  alt="">
+		<h2> {{pokemonName}} </h2>
+	</script>
+
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="./node_modules/handlebars/dist/handlebars.js"></script>
+	<script src="Logic.js"></script>
+	<script src="Renderer.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
