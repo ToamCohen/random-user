@@ -1,0 +1,59 @@
+body{
+	background-color: rgb(117, 117, 117);
+}
+
+#user-container{
+	display: grid;
+	justify-content: start;
+	background-color: rgb(99, 117, 117);
+}
+
+.user-img{
+	width: 15em;
+	height: auto;
+	border-radius: 15em;
+}
+
+#qoutes-container{
+	display: grid;
+	justify-content: center;
+}
+#pokemon-container{
+	display: grid;
+	justify-content: center;
+}
+
+.pokemon-img{
+	width: 15em;
+	height: auto;
+}
+
+#users-container{
+	display: grid;
+	justify-content: center;
+}
+
+#qoutes-container{
+	white-space:pre-wrap;
+}
+
+#pokemon-andqutes-and-users-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+p{
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.pokemon-container{
+	display: grid;
+	justify-items: center;
+}
+
+.main-pokemon{
+	display: grid;
+	justify-items: center;
+}

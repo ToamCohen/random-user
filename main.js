@@ -5,10 +5,10 @@ $("#load-Data").on("click", userData)
 
 
 const displayUser = function () {
-	renderer.userRender(logic.user)
-	renderer.usersRender(logic.friends)
-	renderer.qoutesRender(logic.qoutes)
-	renderer.pokemonRender(logic.pokemonProfileForUser)
+	renderer.renderData(logic.user, "user" , "user" )
+	renderer.renderData({ users: logic.friends}, "users", "users")
+	renderer.renderData(logic.qoutes, "qoutes" , "qoutes")
+	renderer.renderData(logic.pokemonProfileForUser , "pokemon", "pokemon" )
 	
 }
 $("#display-Data").on("click", displayUser)
